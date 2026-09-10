@@ -168,7 +168,7 @@ a:hover {
     margin-bottom: 20px;
 }
 
-.name, .phone, textarea {
+textarea {
     resize: none;
     font-family: inherit;
     font-size: inherit;
