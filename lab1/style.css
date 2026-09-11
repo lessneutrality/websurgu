@@ -32,7 +32,7 @@
     flex-direction: column; /*чтобы были вертикально поставлены*/
     text-align: right; /*чтобы были приравненными к правому краю*/
     justify-content: center; /*чтобы были посередине вертикально*/
-    margin-left: auto; /*чтобы див был справа*/
+    margin-left: auto; /*задает максимально возможную дистанцию слева прижимая hdr_2nd влево*/
 }
 
 .bigtxt {
@@ -57,8 +57,8 @@
 
 /*333*/
 .table {
-    display: flex;
-    margin: 0 auto;
+    /*display: flex;*/
+    /*margin: 0 auto; спросить*/
     border: 1px solid green;
     border-radius: 5px;
     display: grid;
@@ -103,10 +103,6 @@ a:hover {
 }
 
 /*444*/
-.apps {
-    display: flex;
-    justify-content: center;
-}
 .button, .button2{
     height: 30px;
     width: 740px;
@@ -195,7 +191,6 @@ textarea::placeholder {
     width: 50%;
     margin: 0 auto;/*центринг*/
 
-    color: lightgrey;
     padding-left: 10px;
     border: 1px solid lightgrey;
     border-radius: 5px;
@@ -204,10 +199,6 @@ textarea::placeholder {
     margin-top: 10px;
 }
 
-.qs {
-    display: flex;
-    align-items: center;
-}
 
 .button3 {
     height: 33px;
@@ -223,11 +214,6 @@ textarea::placeholder {
 
     margin-top: 20px;
     margin-bottom: 50px;
-}
-
-.prikol {
-    color: white;
-    text-decoration: none;
 }
 .button3:hover {
     background-color: darkgreen;
