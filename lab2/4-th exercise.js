@@ -1,14 +1,15 @@
 let a = Math.floor(Math.random()*10)+1;
+let userPrompt;
 
-let userPrompt = window.prompt("Guess the number: ")
+while (true){
+    userPrompt = window.prompt("Guess the number: ");
+    console.log(`Your number: ${userPrompt}`)
 
-console.log(`Your number: ${userPrompt}`)
-
-if (userPrompt == a){
-    console.log("Correct")
+    if (userPrompt == a){
+        alert("Correct");
+        break;
+    }
+    else{
+        alert("Wrong");
+    }
 }
-else{
-    console.log("Wrong")
-}
-
-console.log(a)
