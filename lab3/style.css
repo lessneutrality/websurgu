@@ -1,0 +1,11 @@
+.main {
+    display: flex;
+    gap: 15px;
+}
+
+.box{
+    background-color: lightgoldenrodyellow;
+    border: 3.5px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
