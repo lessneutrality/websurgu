@@ -4,7 +4,11 @@ import StarterKit from '@tiptap/starter-kit'
 const editor = new Editor({
     element: document.querySelector('#editor__content'),
     extensions: [StarterKit],
-    content: '<p>Hello World!</p>',
+    content: '',
+    onUpdate: ()=>{
+        currentNote.desc = editor.getJSON()
+        localStorage.setItem(NOTES_KEY, JSON.stringify(notes))
+    }
 })
 
 const buttons = document.querySelectorAll('[data-tiptap-button]')
@@ -188,7 +192,7 @@ function objToHTML(obj) {
     title.innerHTML = `<b>${obj.title}</b>`
 
     const description = document.createElement('div')
-    description.innerHTML = `${obj.desc.slice(0, 20)}...`
+    //description.innerHTML = `${obj.desc.slice(0, 20)}...`
 
     descEl.appendChild(title)
     descEl.appendChild(description)
@@ -199,7 +203,8 @@ function objToHTML(obj) {
     return mainEl
 }
 
-let currentNote
+let currentNote = notes[0]
+editor.commands.setContent(currentNote.desc)
 
 const navbarEl = document.getElementById('navbar__content')
 
