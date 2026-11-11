@@ -128,24 +128,7 @@ saveBtn.addEventListener('click', (e) => {
 })
 
 
-const notes = initDB()/* [
-    {
-        title: 'g6',
-        desc: 'i aint fly like g6 i aint fly like g6',
-        date: '2026-12-13'
-    },
-    {
-        title: 'стиралка',
-        desc: 'они не в адеквате им сносит башню',
-        date: '2026-12-12'
-    },
-    {
-        title: 'кайен',
-        desc: 'на телефоне месседж ты не приедешь',
-        date: '2026-12-11'
-    }
-
-] */
+const notes = initDB()
 
 const days = [
     'вск',
